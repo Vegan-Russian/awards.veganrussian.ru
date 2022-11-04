@@ -1,0 +1,82 @@
+.steps {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    h2 {
+        color: $primary;
+        margin-bottom: 29px;
+    }
+    h3 {
+        font-weight: 400;
+        color: #000;
+    }
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 35px;
+        gap: 21px;
+        font-weight: 300;
+    }
+    &__number {
+        width: 53px;
+        height: 53px;
+        background-image: url(./../images/blob-step.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        font-style: italic;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__content {
+        strong {
+            font-weight: 500;
+            color: #cf076a;
+        }
+    }
+
+    &__exclamation {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    @media (max-width: 767px) {
+        padding: 37px 0;
+        h2 {
+            margin-bottom: 15px;
+            grid-area: title;
+        }
+        h3 {
+            font-size: 16px;
+        }
+
+        &__number {
+            grid-area: num;
+            width: 26px;
+            height: 26px;
+        }
+
+        &__content {
+            display: contents;
+        }
+
+        &__text {
+            grid-area: textBlock;
+        }
+
+        &__item {
+            display: grid;
+            grid-template-areas:
+                "num title"
+                "textBlock textBlock";
+            grid-template-columns: auto 1fr;
+            align-items: center;
+            grid-gap: 7px 18px;
+            margin-bottom: 15px;
+        }
+
+        &__exclamation {
+            height: 24px;
+        }
+    }
+}

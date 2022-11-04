@@ -2,8 +2,30 @@
 $imagesPath: "../images/" !default;
 $fontsPath: "../fonts/" !default;
 
+@import "fonts";
 @import "settings";
 @import "common";
 @import "utils";
+@import "header";
+@import "btn";
+@import "footer";
+@import "checkbox";
 
 @import "promo";
+@import "about";
+@import "steps";
+@import "prizes";
+@import "nominations";
+@import "cta";
+@import "burger";
+@import "results";
+@import "voting-header";
+@import "voting";
+@import "total";
+@import "winner";
+@import "contestant";
+@import "accordion";
+
+a[href*="/vote.html"] {
+    pointer-events: none;
+}

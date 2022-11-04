@@ -1,8 +1,14 @@
 doctype html
 html.no-js(lang='ru')
-  include components/_head
+  include components/blocks/_head
   body.transition-lock
     block page
+      include components/blocks/_header
       main
-        include components/_promo
-  
+        include components/blocks/_promo
+        include components/blocks/_about
+        include components/blocks/_steps
+        include components/blocks/_prizes
+        include components/blocks/_nominations
+        include components/blocks/_cta
+      include components/blocks/_footer

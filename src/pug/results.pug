@@ -1,0 +1,553 @@
+-
+  var milk = [
+    {name: "Соевое молоко банановое Alpro", voters: 393},
+    {name: "Соевое молоко ванильное Alpro", voters: 232},
+    {name: "Миндальное молоко Alpro", voters: 152},
+    {name: "Соевое молоко банановое Green Milk", voters: 79},
+    {name: "Овсяное молоко ванильное Nemoloko", voters: 105},
+    {name: "Овсяное молоко Nemoloko", voters: 448},
+    {name: "Рисовое молоко Nemoloko", voters: 136},
+    {name: "Молоко шоколадное Nemoloko", voters: 339},
+    {name: "Овсяное молоко Овсяша", voters: 109},
+    {name: "Овсяное молоко шоколадное Овсяша", voters: 95}
+  ]
+
+  var milk_barista = [
+    {name: "Кокосово-соевое молоко For Professionals Alpro", voters: 307},
+    {name: "Молоко миндальное For Professionals Alpro", voters: 161},
+    {name: "Овсяное молоко для бариста Oddly Good", voters: 56},
+    {name: "Соевое молоко для бариста Nemoloko", voters: 141},
+    {name: "Кокосовое молоко для бариста Nemoloko", voters: 193},
+    {name: "Миндальное молоко для бариста Nemoloko", voters: 214},
+
+  ]
+
+  var yogurt = [
+    {name: "Овсяный йогурт с клубничным мороженым Здоровое меню", voters: 92},
+    {name: "Соевый йогурт с виноградом, фейхоа и кокосовым желе Hi", voters: 154},
+    {name: "Овсяный йогурт с манго и маракуйя Nemoloko", voters: 177},
+    {name: "Кокосовый йогурт с апельсином и манго Green Idea", voters: 110},
+    {name: "Соевый йогурт с клубникой Green Idea", voters: 244},
+    {name: "Соевый йогурт с вишней Green Idea", voters: 393},
+  ]
+
+
+  var cheese = [
+    {name: "Сыр копченый Volko Molko", voters: 87},
+    {name: "Сыр Mexican DaVega", voters: 125},
+    {name: "Сыр гауда DaVega", voters: 80},
+    {name: "Сыр бутербродный Volko Molko", voters: 70},
+    {name: "Сыр гауда нарезка Green Idea", voters: 216},
+    {name: "Сыр пармезан Green Idea", voters: 197},
+    {name: "Сыр Indian DaVega", voters: 72},
+    {name: "Сыр Просто-Постно", voters: 125},
+  ]
+
+  var icecream = [
+    {name: "Мороженое Овсянка МясновЪ", voters: 14},
+    {name: "Мороженое (не мороженое) Сакское", voters: 52},
+    {name: "Мороженое классическое O12", voters: 32},
+    {name: "Мороженое шоколадное O12", voters: 32},
+    {name: "Мороженое шоколадное Baskin Robbins", voters: 141},
+    {name: "Мороженое Фрикерс Friky", voters: 147},
+    {name: "Мороженое кокосовое 33 Пингвина", voters: 151},
+    {name: "Эскимо бананово-клубничное АйсКро", voters: 81},
+    {name: "Эскимо кокосовое АйсКро", voters: 121},
+  ]
+
+  var syrok = [
+    {name: "Сырок Сгущёнка Raw to go", voters: 84},
+    {name: "Сырок с печенькой Friky", voters: 193},
+    {name: "Сырок Арахисовая паста Mallakto", voters: 64},
+    {name: "Сырок Кленовый сироп Делали дела", voters: 35},
+  ]
+
+
+  var mayo = [
+    {name: "Майонез постный Слобода", voters: 324},
+    {name: "Майонез соевый ВкусВилл", voters: 87},
+    {name: "Майонезный соус постный с лимонным соком Махеевъ", voters: 77},
+    {name: "Майонезный соус Татарский Develey", voters: 72},
+    {name: "Веганез Бо", voters: 19},
+    {name: "Майонезный соус постный с жареным луком Ласка", voters: 78},
+    {name: "Майонезный соус вегетарианский Solio Vegan", voters: 46},
+  ]
+
+  var cream_cheese = [
+    {name: "Крем-чиз грибы и розмарин Solio Vegan", voters: 76},
+    {name: "ВегЧиз из кешью с французскими травами и чесноком Айскро", voters: 52},
+    {name: "ВегЧиз из кешью с грибами Айскро", voters: 28},
+    {name: "Крем-чиз классический из кешью Casa Kubana", voters: 94},
+    {name: "Крем-чиз с артишоком и грецким орехом De Olio", voters: 100},
+  ]
+
+
+  var meat = [
+    {name: "Фрикадельки HiBalls", voters: 119},
+    {name: "Растительный фарш HiBeef", voters: 76},
+    {name: "Котлеты Вместо говядины Митлесс", voters: 89},
+    {name: "Котлеты из соевого белка От Ильиной", voters: 41},
+    {name: "Фарш растительный вместо говядины Митлесс", voters: 72},
+    {name: "Хай бургер HiBurger", voters: 313},
+    {name: "Фарш Welldone", voters: 130},
+    {name: "Котлета для бургера Vegafood", voters: 63},
+  ]
+
+  var chicken = [
+    {name: "Наггетсы Higgets", voters: 255},
+    {name: "Наггетсы некурица Perfetto", voters: 124},
+    {name: "Фарш растительный вместо курицы Митлесс", voters: 55},
+    {name: "Филе вместо курицы Greenwise", voters: 88},
+    {name: "Наггетсы с сыром и паприкой Vegafood", voters: 124},
+  ]
+
+  var kolbasa = [
+    {name: "Краснодарская Высший Вкус", voters: 142},
+    {name: "Таллинская Высший Вкус", voters: 157},
+    {name: "Сервелат VEGO", voters: 175},
+    {name: "Классическая колбаса Vegafood", voters: 100},
+    {name: "Нежирная колбаса VEGO", voters: 45},
+    {name: "Колбаса с грибами Велком", voters: 49},
+    {name: "Классическая колбаса Велком", voters: 66},
+    {name: "Колбаса для поста с грибами Микоян", voters: 68},
+    {name: "Колбаса Экстравюрст Самокат", voters: 128},
+  ]
+
+
+  var pashtet = [
+    {name: "Паштет с баклажаном Гродфуд", voters: 165},
+    {name: "Паштет с луком Дымов", voters: 100},
+    {name: "Паштет Барбекю Casa Kubana", voters: 95},
+    {name: "Паштет Докторский Casa Kubana", voters: 53},
+    {name: "Морской паштет Casa Kubana", voters: 130},
+    {name: "Паштет по-японски Casa Kubana (во ВкусВилл)", voters: 138},
+    {name: "Паштет Сиеста Casa Kubana", voters: 31},
+    {name: "Паштет Белый нут Perva", voters: 93},
+    {name: "Паштет Лесные грибы Perva", voters: 88},
+  ]
+
+
+  var pelmeny = [
+    {name: "Пельмени HiPelly", voters: 137},
+    {name: "Пельмени Vegafood", voters: 60},
+    {name: "Пельмени НЕМЯСО", voters: 0},
+    {name: "Пельмени Кабан Веган", voters: 15},
+    {name: "Пельмени Ильинка", voters: 23},
+  ]
+
+
+  var fish = [
+    {name: "Балтийский деликатес ВегановЪ", voters: 19},
+    {name: "Палочки веганские #23 Vegafood", voters: 92},
+    {name: "Котлеты веганские #26 Vegafood", voters: 46},
+    {name: "Риет из альтернативного лосося Agama", voters: 24},
+    {name: "Тофу-бычки Mallakto", voters: 36},
+    {name: "Нешпроты Веган Иваныч", voters: 266},
+  ]
+
+  var sosiski = [
+    {name: "Сосиски Botanik Высший Вкус", voters: 225},
+    {name: "Сосиски Нежные Высший Вкус", voters: 212},
+    {name: "Сардельки Шпикачки Высший Вкус", voters: 114},
+    {name: "Сосиски классические Vegafood", voters: 42},
+    {name: "Сосиски с капустой Микоян", voters: 61},
+    {name: "Сосиски с паприкой Микоян", voters: 115},
+    {name: "Сосиски Венские Митлесс", voters: 66},
+    {name: "Сосиски для жарки НЕМЯСО", voters: 63},
+    {name: "Сосиски Мергез Митлесс", voters: 45},
+  ]
+
+
+  var tofu = [
+    {name: "Копченый тофу ВегановЪ", voters: 95},
+    {name: "Классический тофу Королевский", voters: 87},
+    {name: "Тофу с базиликом Сельский Дом", voters: 89},
+    {name: "Тофу с оливками Сельский Дом", voters: 74},
+    {name: "Тофу классический Ясо", voters: 164},
+    {name: "Тофу копченый Mallakto", voters: 136},
+    {name: "Тофу копченый Соймик", voters: 96},
+    {name: "Тофу классический Соймик", voters: 122},
+    {name: "Тофу с грибами Ясо", voters: 59},
+  ]
+
+  var egg = [
+    {name: "Заменитель яиц Polezzno", voters: 42},
+    {name: "Не Яйцо Newa Nutrition", voters: 45},
+    {name: "Заменитель яйца Мак Мастер", voters: 12},
+    {name: "Заменитель яйца Mallakto", voters: 39},
+  ]
+
+doctype html
+html.no-js(lang='ru')
+  include components/blocks/_head
+  body.transition-lock
+    block page
+      header.header.anim
+        .wrapper.header__wrapper
+          a(href="/" title="На главную").header__logo: img(data-src="./images/logo.webp", alt="Логотип сайта").lozad
+          nav
+            ul.header__list
+              li: a(href="/#about").header__link О премии
+              li: a(href="/#nominations").header__link Номинации
+              li: a(href="#contacts").header__link Контакты
+              li: a(href="/results.html").header__link Результаты 2021
+
+          button(type="button").header__burger
+            span.burger
+              span.burger__line.burger__line_top
+              span.burger__line
+              span.burger__line.burger__line_bottom
+
+      section.voting-header.voting-header_results
+        .wrapper
+          .voting-header__dots
+            .voting-header__big-dot
+            .voting-header__small-dot
+          .voting-header__small-dot
+          h1.anim результаты <span>vegan russian</span> awards&nbsp;2021
+        img(data-src="./images/blob-3.webp", alt="").voting-header__blob-1.lozad
+        img(data-src="./images/blob-4.webp", alt="").voting-header__blob-2.lozad
+
+      main.total
+        .wrapper
+          .winner
+            .winner__img
+              img(data-src="./images/res1-min.webp", alt="").lozad
+            .winner__content
+              h2.winner__nomination Лучшее веганское молоко
+              img(data-src="./images/winners2021/nemoloko.webp", alt="").winner__winner-img.lozad
+              .winner__voters 448 голосов
+              .winner__title Овсяное молоко Nemoloko
+
+          .accordion
+            .accordion__title распределение голосов
+              img(src="./images/arrow-up.svg", alt="")
+            .accordion__body
+              each i in milk
+                .contestant
+                  .contestant__name= i.name
+                  .contestant__gap
+                  .contestant__voters= i.voters
+
+          .winner
+            .winner__img
+              img(data-src="./images/res1-min.webp", alt="").lozad
+            .winner__content
+              h2.winner__nomination Лучшее веган бариста молоко
+              img(data-src="./images/winners2021/alpro.webp", alt="").winner__winner-img.lozad
+              .winner__voters 307 голосов
+              .winner__title Кокосово-соевое молоко For Professionals Alpro
+
+          .accordion
+            .accordion__title распределение голосов
+              img(src="./images/arrow-up.svg", alt="")
+            .accordion__body
+              each i in milk_barista
+                .contestant
+                  .contestant__name= i.name
+                  .contestant__gap
+                  .contestant__voters= i.voters
+
+          .winner
+            .winner__img
+              img(data-src="./images/res1-min.webp", alt="").lozad
+            .winner__content
+              h2.winner__nomination Лучший веган йогурт
+              img(data-src="./images/winners2021/nemoloko-yogurt.webp", alt="").winner__winner-img.lozad
+              .winner__voters 419 голосов
+              .winner__title Овсяный йогурт с шоколадными шариками Nemoloko
+
+          .accordion
+            .accordion__title распределение голосов
+              img(src="./images/arrow-up.svg", alt="")
+            .accordion__body
+              each i in yogurt
+                .contestant
+                  .contestant__name= i.name
+                  .contestant__gap
+                  .contestant__voters= i.voters
+
+          .winner
+            .winner__img
+              img(data-src="./images/res1-min.webp", alt="").lozad
+            .winner__content
+              h2.winner__nomination Лучший веган сыр
+              img(data-src="./images/winners2021/mozzarella.webp", alt="").winner__winner-img.lozad
+              .winner__voters 244 голосов
+              .winner__title Сыр моцарелла Green Idea
+
+          .accordion
+            .accordion__title распределение голосов
+              img(src="./images/arrow-up.svg", alt="")
+            .accordion__body
+              each i in cheese
+                .contestant
+                  .contestant__name= i.name
+                  .contestant__gap
+                  .contestant__voters= i.voters
+
+          .winner
+            .winner__img
+              img(data-src="./images/res1-min.webp", alt="").lozad
+            .winner__content
+              h2.winner__nomination Лучшее веган мороженое
+              img(data-src="./images/winners2021/friky.webp", alt="").winner__winner-img.lozad
+              .winner__voters 160 голосов
+              .winner__title Мороженое рожок шоколадный Friky
+
+          .accordion
+            .accordion__title распределение голосов
+              img(src="./images/arrow-up.svg", alt="")
+            .accordion__body
+              each i in icecream
+                .contestant
+                  .contestant__name= i.name
+                  .contestant__gap
+                  .contestant__voters= i.voters
+
+          .winner
+            .winner__img
+              img(data-src="./images/res1-min.webp", alt="").lozad
+            .winner__content
+              h2.winner__nomination Лучший веган сырок
+              img(data-src="./images/winners2021/aleksandrov.webp", alt="").winner__winner-img.lozad
+              .winner__voters 454 голосов
+              .winner__title Сырок Веган Б.Ю. Александров
+
+          .accordion
+            .accordion__title распределение голосов
+              img(src="./images/arrow-up.svg", alt="")
+            .accordion__body
+              each i in syrok
+                .contestant
+                  .contestant__name= i.name
+                  .contestant__gap
+                  .contestant__voters= i.voters
+
+          .winner
+            .winner__img
+              img(data-src="./images/res1-min.webp", alt="").lozad
+            .winner__content
+              h2.winner__nomination Лучший веган майонез
+              img(data-src="./images/winners2021/laska.webp", alt="").winner__winner-img.lozad
+              .winner__voters 447 голосов
+              .winner__title Майонез постный Ласка
+
+          .accordion
+            .accordion__title распределение голосов
+              img(src="./images/arrow-up.svg", alt="")
+            .accordion__body
+              each i in mayo
+                .contestant
+                  .contestant__name= i.name
+                  .contestant__gap
+                  .contestant__voters= i.voters
+
+          .winner
+            .winner__img
+              img(data-src="./images/res1-min.webp", alt="").lozad
+            .winner__content
+              h2.winner__nomination Лучший веган крем-чиз
+              img(data-src="./images/winners2021/casa_zel.webp", alt="").winner__winner-img.lozad
+              .winner__voters 112 голосов
+              .winner__title Крем-чиз из кешью с зеленью Casa Kubana
+
+          .accordion
+            .accordion__title распределение голосов
+              img(src="./images/arrow-up.svg", alt="")
+            .accordion__body
+              each i in cream_cheese
+                .contestant
+                  .contestant__name= i.name
+                  .contestant__gap
+                  .contestant__voters= i.voters
+
+          .winner
+            .winner__img
+              img(data-src="./images/res1-min.webp", alt="").lozad
+            .winner__content
+              h2.winner__nomination Лучший аналог мяса
+              img(data-src="./images/winners2021/ecodelki.webp", alt="").winner__winner-img.lozad
+              .winner__voters 369 голосов
+              .winner__title Экодельки ХУВУДРОЛЛ ИКЕА
+
+          .accordion
+            .accordion__title распределение голосов
+              img(src="./images/arrow-up.svg", alt="")
+            .accordion__body
+              each i in meat
+                .contestant
+                  .contestant__name= i.name
+                  .contestant__gap
+                  .contestant__voters= i.voters
+
+
+          .winner
+            .winner__img
+              img(data-src="./images/res1-min.webp", alt="").lozad
+            .winner__content
+              h2.winner__nomination Лучший аналог курицы
+              img(data-src="./images/winners2021/kotletar.webp", alt="").winner__winner-img.lozad
+              .winner__voters 257 голосов
+              .winner__title Котлеты со вкусом ароматной курочки неМясо Котлетарь
+
+          .accordion
+            .accordion__title распределение голосов
+              img(src="./images/arrow-up.svg", alt="")
+            .accordion__body
+              each i in chicken
+                .contestant
+                  .contestant__name= i.name
+                  .contestant__gap
+                  .contestant__voters= i.voters
+
+          .winner
+            .winner__img
+              img(data-src="./images/res1-min.webp", alt="").lozad
+            .winner__content
+              h2.winner__nomination Лучший аналог рыбы
+              img(data-src="./images/winners2021/neshproty.webp", alt="").winner__winner-img.lozad
+              .winner__voters 266 голосов
+              .winner__title Нешпроты Веган Иваныч
+
+
+          .accordion
+            .accordion__title распределение голосов
+              img(src="./images/arrow-up.svg", alt="")
+            .accordion__body
+              each i in fish
+                .contestant
+                  .contestant__name= i.name
+                  .contestant__gap
+                  .contestant__voters= i.voters
+
+
+          .winner
+            .winner__img
+              img(data-src="./images/res1-min.webp", alt="").lozad
+            .winner__content
+              h2.winner__nomination Лучший аналог яйца
+              img(data-src="./images/winners2021/omlet.webp", alt="").winner__winner-img.lozad
+              .winner__voters 143 голоса
+              .winner__title Тофу-омлет Casa Kubana
+
+
+          .accordion
+            .accordion__title распределение голосов
+              img(src="./images/arrow-up.svg", alt="")
+            .accordion__body
+              each i in egg
+                .contestant
+                  .contestant__name= i.name
+                  .contestant__gap
+                  .contestant__voters= i.voters
+
+
+          .winner
+            .winner__img
+              img(data-src="./images/res1-min.webp", alt="").lozad
+            .winner__content
+              h2.winner__nomination Лучшие веган пельмени
+              img(data-src="./images/winners2021/pelmeny.webp", alt="").winner__winner-img.lozad
+              .winner__voters 265 голосов
+              .winner__title Пельмени неМясо
+
+
+          .accordion
+            .accordion__title распределение голосов
+              img(src="./images/arrow-up.svg", alt="")
+            .accordion__body
+              each i in pelmeny
+                .contestant
+                  .contestant__name= i.name
+                  .contestant__gap
+                  .contestant__voters= i.voters
+
+
+          .winner
+            .winner__img
+              img(data-src="./images/res1-min.webp", alt="").lozad
+            .winner__content
+              h2.winner__nomination Лучшие веган сосиски
+              img(data-src="./images/winners2021/vv_sosiski.webp", alt="").winner__winner-img.lozad
+              .winner__voters 229 голосов
+              .winner__title Сосиски Delicious Высший Вкус
+
+
+          .accordion
+            .accordion__title распределение голосов
+              img(src="./images/arrow-up.svg", alt="")
+            .accordion__body
+              each i in sosiski
+                .contestant
+                  .contestant__name= i.name
+                  .contestant__gap
+                  .contestant__voters= i.voters
+
+
+
+          .winner
+            .winner__img
+              img(data-src="./images/res1-min.webp", alt="").lozad
+            .winner__content
+              h2.winner__nomination Лучшая веган колбаса
+              img(data-src="./images/winners2021/vv_kolbasa.webp", alt="").winner__winner-img.lozad
+              .winner__voters 198 голосов
+              .winner__title Пшеничная Высший Вкус
+
+          .accordion
+            .accordion__title распределение голосов
+              img(src="./images/arrow-up.svg", alt="")
+            .accordion__body
+              each i in kolbasa
+                .contestant
+                  .contestant__name= i.name
+                  .contestant__gap
+                  .contestant__voters= i.voters
+
+
+          .winner
+            .winner__img
+              img(data-src="./images/res1-min.webp", alt="").lozad
+            .winner__content
+              h2.winner__nomination Лучший веган паштет
+              img(data-src="./images/winners2021/pashtet.webp", alt="").winner__winner-img.lozad
+              .winner__voters 199 голосов
+              .winner__title Паштет с грибами Дымов
+
+          .accordion
+            .accordion__title распределение голосов
+              img(src="./images/arrow-up.svg", alt="")
+            .accordion__body
+              each i in pashtet
+                .contestant
+                  .contestant__name= i.name
+                  .contestant__gap
+                  .contestant__voters= i.voters
+
+
+
+          .winner
+            .winner__img
+              img(data-src="./images/res1-min.webp", alt="").lozad
+            .winner__content
+              h2.winner__nomination Лучший тофу
+              img(data-src="./images/winners2021/tofu.webp", alt="").winner__winner-img.lozad
+              .winner__voters 210 голосов
+              .winner__title Классический тофу Сельский Дом:
+
+
+          .accordion
+            .accordion__title распределение голосов
+              img(src="./images/arrow-up.svg", alt="")
+            .accordion__body
+              each i in tofu
+                .contestant
+                  .contestant__name= i.name
+                  .contestant__gap
+                  .contestant__voters= i.voters
+
+
+
+
+      include components/blocks/_footer

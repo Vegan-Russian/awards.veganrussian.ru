@@ -1,0 +1,41 @@
+.checkbox {
+    display: block;
+
+    &__box {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        height: 20px;
+        width: 20px;
+        border: 2px solid $primary;
+        margin-right: 10px;
+        transition: all 0.2s;
+        opacity: 0.6;
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 6px;
+            top: 2px;
+            width: 3px;
+            height: 8px;
+            border: solid $primary;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    }
+
+    path {
+        fill: $black;
+        fill-opacity: 0;
+        transition: fill-opacity 0.2s ease-in-out;
+    }
+
+    input:checked + &__box {
+        opacity: 1;
+        &::after {
+            display: block;
+        }
+    }
+}

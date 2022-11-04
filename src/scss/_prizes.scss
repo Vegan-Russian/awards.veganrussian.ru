@@ -1,0 +1,84 @@
+.prizes {
+    padding-bottom: 143px;
+    h2 {
+        color: $primary;
+        margin-bottom: 23px;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__line {
+        grid-area: line;
+        background-color: #c1aaa0;
+        height: 100%;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 24px;
+        padding: 0 10%;
+        font-weight: 300;
+        img {
+            margin-bottom: 37px;
+        }
+        &_diploma {
+            padding-top: 26px;
+            img {
+                margin-bottom: 10px;
+            }
+        }
+        &:first-child {
+            border-right: 3px solid #c1aaa0;
+        }
+
+        h3 {
+            color: $primary;
+            margin-bottom: 8px;
+            line-height: 1.4;
+            font-size: 35px;
+            font-weight: 500;
+        }
+    }
+
+    @media (max-width: 1240px) {
+        h3 {
+            font-size: 27px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        padding-bottom: 70px;
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        &__item {
+            font-size: 12px;
+            img {
+                width: clamp(59px, 15vw, 200px);
+                height: auto;
+                margin-bottom: 22px;
+            }
+            h3 {
+                font-size: 14px;
+            }
+
+            &:first-child {
+                border-right: none;
+            }
+
+            &_diploma {
+                padding-top: 10px;
+                img {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
