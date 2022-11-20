@@ -1,0 +1,36 @@
+mixin vote-nav(isVotingPage)
+  -
+    var nav_list = [
+      {title: "Лучшее веганское молоко", link: "vegan_milk"},
+      {title: "Лучшее бариста молоко", link: "vegan_milk_barista"},
+      {title: "Лучший веганский кисломолочный продукт", link: "vegan_yigurt"},
+      {title: "Лучший веганский сыр", link: "vegan_cheese"},
+      {title: "Лучшее веганское мороженое", link: "vegan_ice_cream"},
+      {title: "Лучшие веганские сырки", link: "vegan_cheese_curd"},
+      {title: "Лучший веганский майонез", link: "vegan_mayo"},
+      {title: "Лучший крем-чиз", link: "vegan_creme_cheese"},
+      {title: "Лучший продукт для замены мяса", link: "vegan_meat_alternatives"},
+      {title: "Лучший продукт для замены курицы", link: "vegan_chiken_alternatives"},
+      {title: "Лучший продукт для замены рыбы", link: "vegan_fish"},
+      {title: "Лучший продукт для замены яиц", link: "vegan_eggs"},
+      {title: "Лучшие веганские пельмени", link: "vegan_pelmeni"},
+      {title: "Лучшие веганские сосиски", link: "vegan_sosiski"},
+      {title: "Лучшая веганская колбаса", link: "vegan_kolbasa"},
+      {title: "Лучший веганский паштет", link: "vegan_pashtet"},
+      {title: "Лучший тофу", link: "vegan_tofu"},
+    ]
+  nav.vote-nav
+    button(type="button").vote-nav__btn Все номинации
+      img(src="./images/tick.svg", alt="")
+    ul.vote-nav__list
+      each i in nav_list
+        li: a(href=`${isVotingPage ? '#' + i.link : '/vote.html#' + i.link}`).vote-nav__link= i.title
+
+
+
+
+
+
+
+
+

@@ -11,6 +11,7 @@ window.onload = function () {
     },
   }).observe();
 
+  // Хак для анимации элементов по скроллу
   lozad(".anim", {
     rootMargin: "40px 0px",
     loaded: function (el) {
@@ -45,5 +46,25 @@ window.onload = function () {
       const parent = this.closest(".accordion");
       parent.classList.toggle("active");
     });
+  });
+
+  // Логика для открытия и закрытия меню с номинантами на странице голосования
+  document.querySelector(".vote-nav__btn")?.addEventListener(
+    "click",
+    () => {
+      document.querySelector(".vote-nav").classList.toggle("js-active");
+    },
+
+    { passive: true }
+  );
+
+  document.querySelectorAll(".vote-nav__link")?.forEach((item) => {
+    item.addEventListener(
+      "click",
+      function () {
+        document.querySelector(".vote-nav").classList.remove("js-active");
+      },
+      { passive: true }
+    );
   });
 };

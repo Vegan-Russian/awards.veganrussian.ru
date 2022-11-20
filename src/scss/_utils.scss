@@ -26,6 +26,17 @@
 //     white-space: nowrap;
 // }
 
+.text-center {
+    text-align: center;
+}
+
+.accent-text {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: calc(54 / 45);
+    color: $primary;
+}
+
 @include lg {
     .hide-for-lg {
         display: none !important;
@@ -42,6 +53,10 @@
     .hide-for-md {
         display: none !important;
     }
+
+    .accent-text {
+        font-size: 24px;
+    }
 }
 
 @include md-up {
@@ -53,6 +68,9 @@
 @include sm {
     .hide-for-sm {
         display: none !important;
+    }
+    .accent-text {
+        font-size: 18px;
     }
 }
 

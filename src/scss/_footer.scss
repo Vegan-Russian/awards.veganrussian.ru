@@ -2,14 +2,25 @@
     padding: 156px 0 56px;
     position: relative;
     z-index: 1;
+    background-color: #8551cf;
+    color: #fff;
+    path {
+        fill: #fff;
+    }
 
     h2 {
         font-size: 60px;
         font-weight: normal;
         line-height: 1.6;
         margin-bottom: 30px;
-        color: $primary;
-        font-weight: 500;
+        font-weight: 600;
+    }
+
+    &__email {
+        font-size: 45px;
+        font-weight: bold;
+        margin-bottom: 38px;
+        display: block;
     }
 
     &__blob-1,
@@ -42,34 +53,6 @@
         text-align: center;
         margin-bottom: 157px;
     }
-    &__desc {
-        margin-bottom: 46px;
-        line-height: 1.6;
-    }
-    &__links {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    &__author-link {
-        display: flex;
-        align-items: center;
-        line-height: 1;
-        font-size: 30px;
-        text-underline-offset: 8px;
-
-        &:hover {
-            text-decoration: underline;
-        }
-
-        img {
-            margin-right: 11px;
-        }
-    }
-
-    &__email {
-        font-weight: 500;
-    }
 
     &__socs {
         display: flex;
@@ -84,14 +67,6 @@
 
     @media (max-width: 1200px) {
         padding-top: 100px;
-        &__author-link {
-            font-size: 20px;
-        }
-
-        &__links {
-            justify-content: center;
-            gap: clamp(20px, 4vw, 50px);
-        }
     }
 
     @media (max-width: 960px) {
@@ -100,26 +75,19 @@
             line-height: 1.6;
             margin-bottom: 20px;
         }
-        &__links {
-            justify-content: center;
-            gap: clamp(10px, 2vw, 20px);
+
+        &__email {
+            font-size: 24px;
+            margin-bottom: 16px;
         }
 
         &__wrapper {
             margin-bottom: 60px;
         }
 
-        &__desc {
-            font-size: 16px;
-            margin-bottom: 12px;
-            max-width: 270px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
         &__socs {
             grid-gap: 22px;
-            img {
+            svg {
                 width: 24px;
                 height: auto;
             }
@@ -153,17 +121,6 @@
         }
         &__wrapper {
             margin-bottom: 26px;
-        }
-        &__links {
-            img {
-                width: 12px;
-                height: auto;
-                margin-right: 4px;
-            }
-        }
-        &__author-link {
-            font-size: 11px;
-            text-underline-offset: 4px;
         }
     }
 }

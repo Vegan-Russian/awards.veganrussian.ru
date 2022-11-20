@@ -1,6 +1,5 @@
 @charset "utf-8";
-$imagesPath: "../images/" !default;
-$fontsPath: "../fonts/" !default;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;900&display=swap");
 
 @import "fonts";
 @import "settings";
@@ -15,7 +14,6 @@ $fontsPath: "../fonts/" !default;
 @import "about";
 @import "steps";
 @import "prizes";
-@import "nominations";
 @import "cta";
 @import "burger";
 @import "results";
@@ -25,7 +23,5 @@ $fontsPath: "../fonts/" !default;
 @import "winner";
 @import "contestant";
 @import "accordion";
-
-a[href*="/vote.html"] {
-    pointer-events: none;
-}
+@import "vote-nav";
+@import "thanks";

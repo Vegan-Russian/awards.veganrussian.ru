@@ -4,10 +4,6 @@
     padding: 0;
 }
 
-::-ms-clear {
-    display: none;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -20,7 +16,7 @@ body {
     min-height: 100vh;
     font-size: 25px;
     line-height: 1.55;
-    font-family: "Roboto", Arial, serif;
+    font-family: "Nunito", sans-serif;
     & > main {
         flex-grow: 1;
     }
@@ -51,7 +47,6 @@ a {
 
 h2 {
     font-size: 45px;
-    font-weight: 500;
 }
 
 img {

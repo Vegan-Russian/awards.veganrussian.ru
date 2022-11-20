@@ -1,0 +1,14 @@
+include components/blocks/_vote-nav
+
+
+doctype html
+html.no-js(lang='ru')
+  include components/blocks/_head
+  body.transition-lock
+    block page
+      include components/blocks/_header_on_light
+      main
+        include components/blocks/_results_empty
+      include components/blocks/_cta
+      include components/blocks/_footer
+

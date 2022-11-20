@@ -1,0 +1,8 @@
+.thanks {
+    padding-bottom: 125px;
+    text-align: center;
+
+    @include md {
+        padding-bottom: 60px;
+    }
+}

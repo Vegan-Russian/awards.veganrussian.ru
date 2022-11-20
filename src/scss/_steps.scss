@@ -6,7 +6,7 @@
         margin-bottom: 29px;
     }
     h3 {
-        font-weight: 400;
+        font-weight: 500;
         color: #000;
     }
     &__item {
@@ -15,6 +15,11 @@
         margin-bottom: 35px;
         gap: 21px;
         font-weight: 300;
+    }
+    &__text {
+        p + p {
+            margin-top: 1em;
+        }
     }
     &__number {
         width: 53px;
@@ -27,8 +32,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        font-weight: normal;
     }
     &__content {
+        max-width: 1000px;
         strong {
             font-weight: 500;
             color: #cf076a;
