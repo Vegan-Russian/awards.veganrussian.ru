@@ -3,18 +3,8 @@ footer.footer
   .footer__blob-2: img(data-src="./images/footer-blob-02.webp", alt="").lozad
   .wrapper.footer__wrapper#contacts
     h2.anim Контакты
-    p.footer__desc.anim По любым вопросам пишите нам на <a href="mailto:info@veganrussian.com" class="footer__email">info@veganrussian.com</a>, а также подписывайтесь на нас в соцсетях:
+    a(href="mailto:info@veganrussian.com").footer__email.anim info@veganrussian.com
     .footer__socs.anim
-      a(href="https://www.instagram.com/vegan.russian/" target="_blank"): img(data-src="./images/inst.svg", alt="").lozad
-      a(href="https://t.me/veganrussiantg" target="_blank").footer__tg: img(data-src="./images/tg.svg", alt="").lozad
-  .wrapper.footer__links.anim
-    a(href="https://www.instagram.com/d.zine1/" target="_blank").footer__author-link
-      img(data-src="./images/inst.svg", alt="" width="34").lozad
-      | Лейбл @d.zine1
-    a(href="https://www.instagram.com/design__saya/" target="_blank").footer__author-link
-      img(data-src="./images/inst.svg", alt="" width="34").lozad
-      | Дизайн @design__saya
-    a(href="https://vk.com/id416854297" target="_blank").footer__author-link
-      img(data-src="./images/vk.svg", alt="" width="34").lozad
-      | Разработка Эдик Гизбрехт
+      a(href="https://www.instagram.com/vegan.russian/" target="_blank"): include ./../../../images/inst.svg
+      a(href="https://t.me/veganrussiantg" target="_blank").footer__tg: include ./../../../images/tg.svg
 
