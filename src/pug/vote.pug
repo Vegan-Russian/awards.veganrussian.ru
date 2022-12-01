@@ -3,6 +3,7 @@ include components/blocks/_vote-nav
 doctype html
 html.no-js(lang='ru')
   include components/blocks/_head
+    title Голосование
 
     script(type='text/javascript').
       (function (d, w, c) {
@@ -190,7 +191,7 @@ html.no-js(lang='ru')
     block page
       header.header.anim
         .wrapper.header__wrapper
-          a(href="/" title="На главную").header__logo: img(src="./images/logo.webp", alt="Логотип сайта")
+          a(href="/" title="На главную").header__logo: img(src="./images/gradient-logo-vegan-russian.svg", alt="Логотип сайта")
           nav
             ul.header__list
               li: a(href="/#about").header__link О премии
