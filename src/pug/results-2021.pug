@@ -177,10 +177,11 @@
     {name: "Заменитель яйца Mallakto", voters: 39},
   ]
 
+include components/mixins/_head
+
 doctype html
 html.no-js(lang='ru')
-  include components/blocks/_head
-    title Результаты 2021
+  +_head('Результаты 2021')
   body.transition-lock
     block page
       header.header.anim

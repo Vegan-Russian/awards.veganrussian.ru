@@ -1,10 +1,8 @@
-include components/blocks/_vote-nav
-
+include components/mixins/_head
 
 doctype html
 html.no-js(lang='ru')
-  include components/blocks/_head
-    title Результаты 2022
+  +_head('Результаты 2022')
   body.transition-lock
     block page
       include components/blocks/_header_on_light

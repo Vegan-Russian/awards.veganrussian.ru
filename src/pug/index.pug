@@ -1,7 +1,8 @@
+include components/mixins/_head
+
 doctype html
 html.no-js(lang='ru')
-  include components/blocks/_head
-    title Выбор веганов
+  +_head('Выбор веганов')
   body.transition-lock
     block page
       include components/blocks/_header
